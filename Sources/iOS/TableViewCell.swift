@@ -183,14 +183,14 @@ open class TableViewCell: UITableViewCell {
 	}
 	
 	/// Prepares the visualLayer property.
-	internal func prepareVisualLayer() {
+	open func prepareVisualLayer() {
 		visualLayer.zPosition = 0
 		visualLayer.masksToBounds = true
 		contentView.layer.addSublayer(visualLayer)
 	}
 	
 	/// Manages the layout for the visualLayer property.
-	internal func layoutVisualLayer() {
+	open func layoutVisualLayer() {
 		visualLayer.frame = bounds
 		visualLayer.cornerRadius = cornerRadius
 	}
